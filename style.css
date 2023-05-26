@@ -1,0 +1,164 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(211, 211, 211);
+    justify-content: center;
+}
+
+img {
+    width: 250px;
+    height: auto;
+}
+
+/* Стили для хедера */
+header {
+    background-color: rgb(185, 80, 103);
+    padding: 20px;
+    color: #fff;
+}
+
+/* Стили для продуктов */
+.product {
+    background-color: rgb(67, 191, 248);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 50px;
+}
+
+.info h2 {
+    margin-top: 0;
+    /* Убираем верхний отступ у заголовка товара */
+}
+
+.info p:last-child {
+    margin-bottom: 0;
+    /* Убираем нижний отступ у последнего абзаца */
+}
+
+/* Стили для футера */
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-text {
+    color: #fff;
+}
+
+.product:not(:last-child) {
+    margin-right: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff72d0;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #fff
+  }
+  
+  .btn:hover {
+    background-color: #417ff1;
+  }
+  
+.intro {
+    background-image: url('image/more.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+.container-intro {
+    display: flex;
+    color: #ffffff;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.block {
+    width: 33%;
+}
+
+.intro-text {
+    color: #000;
+    font-size: 40px;
+}
+
+.header-text {
+    margin-left: 100px;
+}
+
+.img-header {
+    width: 50px;
+}
+
+.block-header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .block-header ul li {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .block-header ul li:not(:last-child) { 
+    margin-right: 50px;
+  }
+  
+  .block-header ul li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #4be4ff;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .block-header ul li:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  
+.container-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.block-header:not(:last-child) {
+    margin-right: 100px;
+}
+
+.info-header {
+    font-size: 30px;
+}
+
+.info-text {
+    font-size: 20px;
+}
+
+.info-price {
+    font-size: 17px;
+}
